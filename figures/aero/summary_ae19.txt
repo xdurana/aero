@@ -1,0 +1,21 @@
+Call:
+lm(formula = bearing_temp ~ ., data = training)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-41.625  -6.237  -0.779   4.958  75.670 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)       7.1789960  0.6207017   11.57   <2e-16 ***
+power             0.0355532  0.0002912  122.10   <2e-16 ***
+gen_1_speed       0.0080294  0.0002279   35.23   <2e-16 ***
+gen_bearing_temp -0.1720838  0.0060978  -28.22   <2e-16 ***
+temp_oil_mult     0.1308514  0.0091577   14.29   <2e-16 ***
+temp_out_nacelle  1.0865644  0.0282849   38.41   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 8.633 on 19866 degrees of freedom
+Multiple R-squared:  0.8092,	Adjusted R-squared:  0.8091 
+F-statistic: 1.685e+04 on 5 and 19866 DF,  p-value: < 2.2e-16
