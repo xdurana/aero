@@ -1,0 +1,18 @@
+---
+title: "Parte 2"
+output: html_document
+---
+
+Crear un modelo de regresión para cada aerogenerador donde la variable target será:
+bearing_temp y las variables de entrada serán: power, gen_1_speed, gen_bearing_temp, temp_oil_mult, temp_out_nacelle.
+
+Usar un 70% de los datos para training y 30% para validación. Respetar la continuidad
+del tiempo cuando se divida el dataset.
+
+Usar una o dos gráficas para presentar los resultados del modelo de cada aerogenerador.
+Analizar los resultados y extraer de los resultados posibles "historias" del estado de
+salud de los aerogeneradores.
+
+En esta parte no nos interesa un modelo que sea muy preciso. Lo que nos interesa es
+interpretar correctamente los resultados. Puede ser que precisamente lo que estamos
+buscando es que el modelo sea impreciso bajo ciertas circunstancias.
