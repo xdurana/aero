@@ -1,6 +1,8 @@
 library(tidyverse)
 library(caret)
 
+source('R/aero.R')
+
 unzip('inst/extdata/pfc_tra.zip', exdir = 'inst/extdata')
 
 #datos análogos del aerogenerador 15
