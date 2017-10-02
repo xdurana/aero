@@ -1,9 +1,12 @@
-aero <- aero19
+library(tidyverse)
+library(caret)
+
+aero19 <- aero %>% filter(aero == 'aero19') %>% select(-date_time, -aero)
 
 #split data set
-train_m <- round(aero %>% nrow * .7)
-training <- aero[1:train_m,]
-testing <- aero[(train_m+1):nrow(aero),]
+train_m <- round(aero19 %>% nrow * .7)
+training <- aero19[1:train_m,]
+testing <- aero19[(train_m+1):nrow(aero),]
 
 #linear regression  
 aero_model <- lm(bearing_temp ~ ., data = training)
