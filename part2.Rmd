@@ -129,3 +129,8 @@ xyplot(new.modelvalues$obs ~ new.modelvalues$pred,
        ylab = "Observed")
 
 ```
+
+#comentario
+
+Los modelos explican alrededor del 80% de la variabilidad de la temperatura, aunque predicen mucho mejor las temperaturas bajas que las altas. Las variables `power` y `temp_out_nacelle` son las que más influyen en el calentamiento. El generador aero15 tuvo una parada el 27 y 28 de junio por sobrecalentamiento, que podría ser producida por una mayor variabilidad de `temp_out_nacelle` en los días anteriores. El modelo del aero15 tiene dificultades en prever las altas temperaturas.
+
